@@ -1,4 +1,4 @@
-Write a python script to convert the lists below into a dictionary
+#Write a python script to convert the lists below into a dictionary
 name = ['Ayo', 'Barbie', 'Carla', Dede', 'Eugene']
 Age = [21, 13, 57, 43, 2]
 
