@@ -26,10 +26,10 @@ r_list = np.array(revenue)
 e_list = np.array(expenses)
 
 profit = np.subtract(r_list, e_list)
-print(profit)
+print("Profit = %s" % (profit))
 
 Fin_status = dict(zip(months,profit))
-print(Fin_status)
+print("Fin_status = %s " % (Fin_status))
 
 Fin_status_pandaseries = pd.Series(Fin_status, index = months, name = "ABD Company")
 print(Fin_status_pandaseries)
