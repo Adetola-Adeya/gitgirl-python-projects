@@ -13,12 +13,15 @@ df = pd.read_csv("movies_metadata - movies_metadata.csv", skiprows=[29])
 df.head()
 
 2.
+#selecting item in row
 df.loc[df.title=="Grumpier Old Men"]
 
 3. 
+# selecting column and sorting by  release date
 df3 = df.sort_values('release_date')[[ 'title', 'release_date', 'budget', 'revenue', 'runtime']]
 df3
 
 4.
+# turning string to integer
 df3["revenue"] = pd.to_numeric(df3["revenue"], errors='coerce')
 df3[((df3["revenue"] > 2000000) & (df3["budget"] < 1000000))]
